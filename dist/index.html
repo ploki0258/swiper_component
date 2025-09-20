@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輪播套件 Swiper</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="swiper-app">
+        <div class="swiper" ref="swiper" :style="{backgroundImage: `url(${currentItem.cover})`}">
+            <header class="header">
+                <div class="container fluid">
+                    <div class="header-flex">
+                        <div>MBA&copy;</div>
+                        <div>Art Director and Digital Designer</div>
+                        <div class="two-col">
+                            <div>[CET] {{ currentTime }}</div>
+                            <div>
+                                <div class="menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container fluid">
+                    <div class="main-flex">
+                        <div>{{currentItem.name }}</div>
+                        <div>{{currentItem.description }}</div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container fluid">
+                    <div class="footer-flex">
+                        <div class="row">
+                            <div>
+                                <div>Credits</div>
+                                <div>{{currentItem.credits }}</div>
+                            </div>
+                            <div>
+                                <div>Rol</div>
+                                <div>{{currentItem.rol }}</div>
+                            </div>
+                            <div>
+                                <div>Year</div>
+                                <div>{{currentItem.year}}</div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="item-list">
+                                <template v-for="(item, index) in items" :key="item.id">
+                                    <li><a href="#" @click.prevent="setItem(index)"
+                                            :class="{ active: index === currentItemIndex }"
+                                            :style="{backgroundImage: `url(${item.cover})`}">{{item.name}}
+                                        </a></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="./js/lib/vue.global.prod.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

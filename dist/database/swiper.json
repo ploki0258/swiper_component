@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Pebble",
+        "description": "The all-electric trailer for get-up-and-go freedom",
+        "credits": "Oui Will",
+        "rol": "Lead Designer",
+        "year": 2025,
+        "cover": "/images/1.jpg.webp"
+    },
+    {
+        "name": "HAFH",
+        "description": "A discovery platform for the modern traveller ",
+        "credits": "Ilja Van Eck",
+        "rol": "AD & Designer",
+        "year": 2024,
+        "cover": "/images/2.jpg.webp"
+    },
+    {
+        "name": "Studio Messa",
+        "description": "Experiential projects for leading luxury brands",
+        "credits": "Ilja Van Eckaa & Nadia",
+        "rol": "Creative Director",
+        "year": 2023,
+        "cover": "/images/3.jpg.webp"
+    },
+    {
+        "name": "Komoder",
+        "description": "The pinnacle of massage",
+        "credits": "Oui Will & Nadia",
+        "rol": "Creative Studio",
+        "year": 2022,
+        "cover": "/images/4.jpg.webp"
+    },
+    {
+        "name": "Drivania",
+        "description": "Chauffeur-driven transportation services",
+        "credits": "John Will",
+        "rol": "Creative Staff",
+        "year": 2021,
+        "cover": "/images/5.jpg.webp"
+    }
+]
